@@ -3,12 +3,12 @@ pipeline {
 
     stages {
         stage('Build') {
-            steps {
-                when {
+            when {
                 expression {
                     BRANCH_NAME == 'PET-CLINIC'
                 }
             }
+            steps {
                 echo 'Building..'
             }
         }
