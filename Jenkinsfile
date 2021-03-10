@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             when {
                 expression {
-                    BRANCH_NAME == 'PET-CLINIC'
+                    BRANCH_NAME == 'SPRING-PET-CLINIC'
                 }
             }
             steps {
@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
              when {
                 expression {
-                    BRANCH_NAME == 'PET-CLINIC'
+                    BRANCH_NAME == 'SPRING-PET-CLINIC'
                 }
             }
             steps {
@@ -25,7 +25,7 @@ pipeline {
         stage('Deploy') {
              when {
                 expression {
-                    BRANCH_NAME == 'PET-CLINIC'
+                    BRANCH_NAME == 'SPRING-PET-CLINIC'
                 }
             }
             steps {
